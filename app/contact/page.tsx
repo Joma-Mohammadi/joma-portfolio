@@ -14,7 +14,7 @@ export default function ContactPage() {
   return (
     <PageContainer>
       <PageHeader eyebrow="Get in touch" title="Contact">
-        Have a project, a role or a question? Send a message and I'll get back to you.
+        Have a project, a role or a question? Send a message and I will get back to you.
       </PageHeader>
 
       <div className="grid gap-8 lg:grid-cols-[1fr_18rem]">

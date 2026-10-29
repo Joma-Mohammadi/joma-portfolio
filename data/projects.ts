@@ -33,6 +33,15 @@ export const projects: Project[] = [
       "A multi-page portfolio built with the Next.js App Router, TypeScript and Tailwind CSS. It has a shared sidebar layout, a light and dark theme that remembers your choice, a responsive mobile menu, and a contact form with validation.",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "React"],
   },
+  {
+    slug: "ziayamin-dev",
+    title: "Zia Yamin Portfolio",
+    summary: "A personal portfolio website for a full stack developer.",
+    description:
+      "Describe what you built here: your role, what the site includes, and the result.",
+    tech: ["Next.js", "TypeScript", "Shadcn UI", "Tailwind CSS", "HTML"],
+    liveUrl: "https://ziayamin.dev",
+  },
 ];
 
 export function getProject(slug: string): Project | undefined {

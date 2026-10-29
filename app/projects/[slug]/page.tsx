@@ -43,7 +43,7 @@ export default async function ProjectPage({ params }: Props) {
       </header>
 
       <div className="neon-card space-y-8 p-6 sm:p-8">
-        <ProjectImage slug={project.slug} title={project.title} className="aspect-[16/9]" />
+        <ProjectImage slug={project.slug} title={project.title} className="aspect-[2.2/1]" />
         <section>
           <h2 className="mb-3 font-display text-2xl uppercase tracking-wide">Overview</h2>
           <p className="max-w-3xl text-lg leading-relaxed text-muted">{project.description}</p>
