@@ -12,7 +12,7 @@ export interface Project {
 }
 
 /**
- * Screenshots: save an image as  public/images/projects/<slug>.png  (16:9 works best).
+ * Screenshots: save an image as  public/images/projects/<slug>.png  (wide screenshots, about 2.2:1, work best; the whole image is always shown).
  * It is picked up automatically; until it exists a neutral box is shown.
  */
 export const projects: Project[] = [
@@ -32,6 +32,8 @@ export const projects: Project[] = [
     description:
       "A multi-page portfolio built with the Next.js App Router, TypeScript and Tailwind CSS. It has a shared sidebar layout, a light and dark theme that remembers your choice, a responsive mobile menu, and a contact form with validation.",
     tech: ["Next.js", "TypeScript", "Tailwind CSS", "React"],
+    liveUrl: "https://joma-portfolio-wheat.vercel.app/",
+    repoUrl: "https://github.com/Joma-Mohammadi/joma-portfolio",
   },
   {
     slug: "ziayamin-dev",
@@ -39,7 +41,7 @@ export const projects: Project[] = [
     summary: "A personal portfolio website for a full stack developer.",
     description:
       "Describe what you built here: your role, what the site includes, and the result.",
-    tech: ["Next.js", "TypeScript", "Shadcn UI", "Tailwind CSS", "HTML"],
+    tech: ["Next.js", "React"],
     liveUrl: "https://ziayamin.dev",
   },
 ];

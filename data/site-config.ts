@@ -57,7 +57,7 @@ export const siteConfig: SiteConfig = {
     phoneHref: "tel:+93789325708",
     formEndpoint: null,
   },
-  socials: { github: "https://github.com/Joma-Mohammadi", linkedin: "" },
+  socials: { github: "https://github.com/Joma-Mohammadi", linkedin: "https://www.linkedin.com/in/joma-mohammadi-668233401" },
   nav: [
     { label: "Home", href: "/", icon: "home" },
     { label: "About", href: "/about", icon: "about" },

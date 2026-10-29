@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { siteConfig } from "@/data/site-config";
 import { publicFileExists } from "@/lib/public-file";
+import { TechOrbit } from "./TechOrbit";
 
 /**
  * PORTRAIT: add your own photo at  public/images/joma-portrait.png
@@ -13,7 +14,7 @@ export function PortraitPlaceholder() {
   const hasImage = publicFileExists(siteConfig.portrait.src);
 
   return (
-    <div className="relative mx-auto w-full max-w-[24rem] lg:max-w-[28rem]">
+    <div className="relative mx-auto w-full max-w-[18rem] sm:max-w-[20rem] lg:max-w-[23rem]">
       {/* restrained ambient glow behind the frame */}
       <div
         aria-hidden
@@ -28,12 +29,14 @@ export function PortraitPlaceholder() {
               alt={siteConfig.portrait.alt}
               fill
               priority
-              sizes="(min-width: 1024px) 28rem, 90vw"
+              sizes="(min-width: 1024px) 23rem, 90vw"
               className="object-cover"
             />
           ) : null}
         </div>
       </div>
+
+      <TechOrbit />
 
       {/* small glowing points on the frame edges */}
       <span aria-hidden className="absolute right-0 top-[55%] h-2.5 w-2.5 translate-x-1/2 rounded-full bg-magenta shadow-[0_0_14px_rgb(var(--magenta))]" />

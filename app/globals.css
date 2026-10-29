@@ -198,3 +198,52 @@ body {
     50% { transform: translateY(14px); }
   }
 }
+
+/* ------------------------------------------------------------------ */
+/* Tech icons orbiting the portrait frame (TechOrbit)                  */
+/* ------------------------------------------------------------------ */
+.orbit {
+  display: none;
+  position: absolute;
+  inset: -1.5rem;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.orbit-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  border: 1px solid rgb(var(--line));
+  background: rgb(var(--surface) / 0.92);
+  box-shadow: 0 0 16px rgb(var(--blue) / calc(var(--glow) * 0.7));
+}
+
+@supports (offset-path: inset(0)) {
+  .orbit {
+    display: block;
+  }
+  .orbit-icon {
+    offset-path: inset(0);
+    offset-rotate: 0deg;
+    offset-distance: var(--o, 0%);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  @supports (offset-path: inset(0)) {
+    .orbit-icon {
+      animation: orbit 28s linear infinite;
+      animation-delay: var(--d, 0s);
+    }
+  }
+  @keyframes orbit {
+    from { offset-distance: 0%; }
+    to { offset-distance: 100%; }
+  }
+}
